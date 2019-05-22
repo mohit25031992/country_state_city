@@ -7,7 +7,7 @@ render json: @countries
 end
 
 def show
-@country=Country.find(params[:id])
+@country=Country.find_by_country(params[:id])
 render json: @country
 end
 
